@@ -19,7 +19,7 @@ const ProductDescription = () => {
     const getUserId = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/auth/getUserId",
+          "https://tira-eecommerce.onrender.com/api/auth/getUserId",
           {
             withCredentials: true,
           }

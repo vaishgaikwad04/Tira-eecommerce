@@ -17,7 +17,7 @@ const Update = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/admin/${id}`);
+        const res = await axios.get(`https://tira-eecommerce.onrender.com/api/admin/${id}`);
         const data = res.data.readSingleProduct;
 
         setFormData({

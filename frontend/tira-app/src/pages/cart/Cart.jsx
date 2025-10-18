@@ -12,7 +12,7 @@ const Cart = () => {
 
   const fetchProduct = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/cart/read", {
+      const res = await axios.get("https://tira-eecommerce.onrender.com/api/cart/read", {
         withCredentials: true,
       });
       setCartData(res.data.cart);

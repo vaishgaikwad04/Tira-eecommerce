@@ -11,7 +11,7 @@ const ReadReview = ({ productId, userId }) => {
   const fetchReview = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/read/${productId}`,
+        `https://tira-eecommerce.onrender.com/api/read/${productId}`,
         {
           params: { userId },
           withCredentials: true,

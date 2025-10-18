@@ -9,7 +9,7 @@ const CreateReview = ({ productId }) => {
   useEffect(() => {
     const getUserId = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/auth/getUserId', {
+        const res = await axios.get('https://tira-eecommerce.onrender.com/api/auth/getUserId', {
           withCredentials: true
         });
         setUserId(res.data.userId);  // <-- save userId here

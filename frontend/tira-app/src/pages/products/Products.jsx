@@ -16,7 +16,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/product/read");
+        const res = await axios.get("https://tira-eecommerce.onrender.com/api/product/read");
         setProducts(res.data.readProduct);
       } catch (error) {
         console.error("LIKE ERROR:", error); // Add this for better debugging
